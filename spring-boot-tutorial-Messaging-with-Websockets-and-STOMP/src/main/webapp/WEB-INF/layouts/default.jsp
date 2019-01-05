@@ -35,6 +35,11 @@
 <script src="${contextRoot}/js/jquery-ui.min.js"></script>
 <script src="${contextRoot}/js/tag-it.min.js"></script>
 
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+
+<tiles:insertAttribute name="chatnotifications"></tiles:insertAttribute>
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

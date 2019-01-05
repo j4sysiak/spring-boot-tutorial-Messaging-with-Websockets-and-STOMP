@@ -57,6 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter   {
 			    .hasRole("ADMIN")
 			    .antMatchers(
 			    			 "/webjars/**",
+			    			 "/chat/**",
 			    			 "/profile",
 							 "/profile/*",
 							 "/edit-profile-about",
