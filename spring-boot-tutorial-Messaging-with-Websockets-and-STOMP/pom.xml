@@ -104,41 +104,39 @@
 		<version>${postgresql.version}</version>
 	</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa  -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId> 
-		</dependency>
-		
-	 	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-security</artifactId>
-  		<version>2.0.1.RELEASE</version>  
+		<version>2.0.1.RELEASE</version>
 	</dependency>
-	 
-	 	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
 	<dependency>
 		<groupId>org.springframework.security</groupId>
 		<artifactId>spring-security-taglibs</artifactId>
 		<version>5.0.4.RELEASE</version>
 	</dependency>
-	 
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-mail</artifactId>
-		<version>2.0.1.RELEASE</version><!--$NO-MVN-MAN-VER$-->
-	</dependency> 
-	 
-	 
-	 	<!-- https://mvnrepository.com/artifact/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer -->
+		<version>2.0.1.RELEASE</version><!--$NO-MVN-MAN-VER$ -->
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer -->
 	<dependency>
 		<groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
 		<artifactId>owasp-java-html-sanitizer</artifactId>
 		<version>20160628.1</version>
 	</dependency>
-
 
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
@@ -179,6 +177,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		
+			<!-- webjars -->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>jquery</artifactId>

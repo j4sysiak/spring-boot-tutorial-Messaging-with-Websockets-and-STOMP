@@ -30,7 +30,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter   {
 		
 		http
 			.authorizeRequests()
-				.antMatchers("/",
+				.antMatchers(
+							 "/",
 							 "/search",
 							 "/about",
 							 "/register",
@@ -43,17 +44,20 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter   {
 							 )
 				.permitAll()
 				.antMatchers(
-					"/js/*",
-					"/css/*",
-					"/img/*")
+								"/js/*",
+								"/css/*",
+								"/img/*")
 				.permitAll()
-			    .antMatchers("/editstatus",
+			    .antMatchers(
+			    			 "/editstatus",
 			    			 "/deletestatus",
 			    			 "/viewstatus",
 			    			 "/addstatus"
 			    			 )
 			    .hasRole("ADMIN")
-			    .antMatchers("/profile",
+			    .antMatchers(
+			    			 "/webjars/**",
+			    			 "/profile",
 							 "/profile/*",
 							 "/edit-profile-about",
 							 "/upload-profile-photo",
