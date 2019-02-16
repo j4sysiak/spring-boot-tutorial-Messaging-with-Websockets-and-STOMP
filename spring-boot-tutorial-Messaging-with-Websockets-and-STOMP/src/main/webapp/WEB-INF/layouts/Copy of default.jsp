@@ -16,10 +16,11 @@
 <meta name="_csrf" content="${_csrf.token}"/>
 <meta name="_csrf_header" content="${_csrf.headerName}"/>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	
 <title><tiles:insertAttribute name="title" /></title>
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
@@ -28,20 +29,16 @@
 <link href="${contextRoot}/css/bootstrap.min.css" rel="stylesheet">
 <link href="${contextRoot}/css/main.css" rel="stylesheet">
 
+
 <!-- This is only for javascript tagging on the profile -->
 <link href="${contextRoot}/css/jquery.tagit.css" rel="stylesheet">
+<script src="${contextRoot}/js/jquery-ui.min.js"></script>
+<script src="${contextRoot}/js/tag-it.min.js"></script>
 
-<script
-	src="${contextRoot}/js/jquery-ui.min.js"></script>
-
-<script
-	src="${contextRoot}/js/tag-it.min.js"></script>
-	
 <script src="/webjars/sockjs-client/sockjs.min.js"></script>
 <script src="/webjars/stomp-websocket/stomp.min.js"></script>
 
-<%-- <tiles:insertAttribute name="chatnotifications"></tiles:insertAttribute> --%>
-<%-- <tiles:insertAttribute name="chatviewscript" ignore="true"></tiles:insertAttribute> --%>
+<tiles:insertAttribute name="chatnotifications"></tiles:insertAttribute>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -109,7 +106,6 @@
 	<div class="container">
 		<tiles:insertAttribute name="content" />
 	</div>
-
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="${contextRoot}/js/bootstrap.min.js"></script>

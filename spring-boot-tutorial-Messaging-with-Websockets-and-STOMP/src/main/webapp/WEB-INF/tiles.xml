@@ -63,6 +63,11 @@
 		<put-attribute name="content" value="/WEB-INF/tiles/results.jsp" />
 	</definition>
 
+	<definition name="chat.chatview" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/chatview.jsp" />
+		<put-attribute name="chatviewscript" value="/WEB-INF/tiles/chatviewscript.jsp" />
+	</definition>
+
 </tiles-definitions>
 
 
